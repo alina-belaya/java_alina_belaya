@@ -7,7 +7,7 @@ public class Lab1 {
         System.out.print("Input n: ");
         int n = in.nextInt();
         
-        int result = 1;
+        long result = 1;
         
         for(int i=1; i<=8; i++) {
         	result = result * n;
