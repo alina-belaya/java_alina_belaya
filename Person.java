@@ -62,17 +62,11 @@ class Person {
 
     public int getAge() {
 
-        // Calendar objects for "today" and "date of birth"...
-
         Calendar today    = Calendar.getInstance();
         Calendar birthday = new GregorianCalendar();
         birthday.setTime(birthdate);
 
-        // Compute basic difference in years ....
-
         int yearDiff = today.get( Calendar.YEAR ) - birthday.get( Calendar.YEAR );
-
-        // Birthday still needs to occur this year...
 
         if ( today.get(Calendar.MONTH) < birthday.get(Calendar.MONTH) )
             yearDiff = yearDiff - 1;
